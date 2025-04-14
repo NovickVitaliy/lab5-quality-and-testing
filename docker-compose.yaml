@@ -1,0 +1,16 @@
+services:
+  database.lab5:
+    image: postgres
+    restart: always
+    environment:
+      - POSTGRES_PASSWORD=12345
+      - POSTGRES_USER=admin
+      - POSTGRES_DB=lab5
+    ports:
+      - "5449:5432"
+    volumes:
+      - database-lab5.volume:/var/lib/postgresql/data
+
+
+volumes:
+  database-lab5.volume:
