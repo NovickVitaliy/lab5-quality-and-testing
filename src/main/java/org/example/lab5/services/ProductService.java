@@ -28,10 +28,16 @@ public class ProductService {
     }
 
     public Long create(Product product) {
+        if (product == null) {
+            throw new NullPointerException("Product cannot be null");
+        }
         return this.productRepository.save(product).getId();
     }
 
     public Product update(Product product) {
+        if (product == null) {
+            throw new NullPointerException("Product cannot be null");
+        }
         return this.productRepository.save(product);
     }
 
