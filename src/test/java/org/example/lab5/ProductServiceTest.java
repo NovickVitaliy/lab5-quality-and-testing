@@ -1,3 +1,6 @@
+/*
+ * Copyright (c) 2025. Vitalii Novik
+ */
 package org.example.lab5;
 
 import org.example.lab5.models.Product;
